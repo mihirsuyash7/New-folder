@@ -21,7 +21,7 @@
     padding: 0 30px 30px;
     color: #333;
     visibility: hidden;
-    transition: transform 1s, top 1s;
+    transition: transform 0.5s, top 0.5s;
 }
 
 .open-popup{
@@ -57,7 +57,7 @@
 
 .popup button{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px 0;
     background: #6fd649;
     color: #fff;

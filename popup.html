@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./../New folder/popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <button type="submit" class="btn" onclick="openPopup()">submit</button>
+        <div class="popup" id="popupsafe">
+            <img src="./../New folder/shield.png" alt="safe">
+            <h1> Safe Transaction</h1>
+            <h2> The Entered Transaction is Safe</h2>
+            <h3>Click OK To Proceed!!</h3>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        <!-- <div class="popup" id="popupfraud">
+            <img src="./../New folder/warning.png" alt="fraud">
+            <h1> Fraud Transaction!!!</h1>
+            <h2> The Entered Transaction is Fraudulent</h2>
+            <h3>Click OK To Proceed!!</h3>
+            <button type="button">OK</button>
+        </div> -->
+    </div>
+<script>
+let popup = document.getElementById("popupsafe");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>
